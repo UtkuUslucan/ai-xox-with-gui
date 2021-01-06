@@ -1,4 +1,4 @@
-# XoXGui
+# ai-xox
 
 How it works menu will be updated.
 
