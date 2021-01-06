@@ -9,7 +9,7 @@ When playing Hard AI, if the AI wins, it automatically puts X and O on the board
 UPDATE V1.0
 
 The .exe file added.
-Download url: https://bit.ly/3rZr9W8
+<a href="https://bit.ly/3rZr9W8">Click to Download</a>
 
 
 ##
