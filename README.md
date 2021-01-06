@@ -7,3 +7,10 @@ When playing Hard AI, if the AI wins, it automatically puts X and O on the board
 I'm trying to fix.
 
 
+##
+Game Source Code:
+Youtube - Greg Poy
+
+Gu Source Code:
+İbrahim Utku USLUCAN
+##
