@@ -182,24 +182,29 @@ def simple_AI():
     global AI_mode, AI_level
     AI_mode = True
     AI_level = 1
-    tkinter.messagebox.showinfo("Playing AI!", "You'r playing with Simple AI")
+    #tkinter.messagebox.showinfo("Playing AI!", "You'r playing with Simple AI")
+    statusTxt['text'] = "Player\nVS\nSimple AI"
+
 
 def medium_AI():
     global AI_mode, AI_level
     AI_mode = True
     AI_level = 2
-    tkinter.messagebox.showinfo("Playing AI!", "You'r playing with Medium AI")
+    #tkinter.messagebox.showinfo("Playing AI!", "You'r playing with Medium AI")
+    statusTxt['text'] = "Player\nVS\nMedium AI"
 
 def hard_AI():
     global AI_mode, AI_level
     AI_mode = True
     AI_level = 3
-    tkinter.messagebox.showinfo("Playing AI!", "You'r playing with Hard AI")
+    #tkinter.messagebox.showinfo("Playing AI!", "You'r playing with Hard AI")
+    statusTxt['text'] = "Player\nVS\nHard AI"
 
 def AI_off():
     global AI_mode
     AI_mode = False
-    tkinter.messagebox.showinfo("Player VS Player", "AI is off.")
+    #tkinter.messagebox.showinfo("Player VS Player", "AI is off.")
+    statusTxt['text'] = "Player\nVS\nPlayer"
 
 def place_mark(button):
     global player_x_turn, AI_mode, game_over
@@ -431,7 +436,7 @@ def exit():
 def htp():
     tkinter.messagebox.showinfo("How to play?","RULES FOR TIC-TAC-TOE\n\n1- The game is played on a grid that's 3 squares by 3 squares\n2- You are X, your friend(or the computer in this case) is O. Players take turns putting their marks in empty squares.\n3- The first player to get 3 of her marks in a row (up, down, across or diagonally) is the winner.\n4- When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.\n\nHOW CAN I WIN AT TIC-TAC-TOE?\n\nTo beat the computer(or at least tie), you need to make use of a little bit of strategy. Strategy means figuring out what you need to do to win.\nPart of your strategy is trying to figure out how to get three X's in a row. The other parts is trying to figure out how to stop the computer from getting three O's in a row.\nAfter you put an X in a square, you start looking ahead. Where's the best place for your next X? You look at the empty squares and decide which ones are good choices--which ones might let you make three X's in a row.\nYou also hova to watch where the computer puts its O. That could change what you do next. If the computer gets two Os in a row, you have to put your next X in the last empty square in that row, or the computer will win. You are forced to play in a particular square or lose the game.\nIf you always pay attention and look ahead, you'll never lose a game of Tic-Tac-Toe. You may not win, but at least you'll tie.")
 def about():
-    tkinter.messagebox.showinfo("About","Game Coding: Youtube: Greg Poy\nGui Coding: İbrahim Utku Uslucan")
+    tkinter.messagebox.showinfo("About","Game Coding:\nYoutube: Greg Poy\nGui Coding:\nİbrahim Utku Uslucan")
 def work():
     tkinter.messagebox.showinfo("How it work?","This Simple AI workings is random module")
 
@@ -471,14 +476,14 @@ bottomText.pack()
 bottomText2 = Label(BottomFrame, font=('Arial',10,'bold'), text="utkuuslucan.com",bg='DarkGrey', fg='Cornsilk',justify=CENTER)
 bottomText2.pack()
 
-lblPlayerX = Label(RightFrame, font=('Arial',20,'bold'), text="Player X",padx=2,pady=2, bg='Khaki', relief=FLAT,)
+lblPlayerX = Label(RightFrame, font=('Arial',20,'bold'), text="PLAYER",padx=2,pady=2, bg='Khaki', relief=FLAT,bd=5)
 lblPlayerX.grid(row=0,column=0)
-scorePlayerX = Entry(RightFrame, font=('Arial',20,'bold'), bd=2, fg="black", textvariable= PlayerX, width=6, justify=LEFT).grid(row=0,column=1)
+scorePlayerX = Entry(RightFrame, font=('Arial',20,'bold'), bd=2, fg="black", textvariable= PlayerX, width=6, justify=LEFT,state=DISABLED).grid(row=0,column=1)
 
 
-lblPlayerO = Label(RightFrame, font=('Arial',20,'bold'), text="Player O",padx=2,pady=2, bg='DarkKhaki', relief=FLAT,)
+lblPlayerO = Label(RightFrame, font=('Arial',16,'bold'), text="COMPUTER",padx=2,pady=2, bg='DarkKhaki', relief=FLAT,)
 lblPlayerO.grid(row=1,column=0)
-scorePlayerO = Entry(RightFrame, font=('Arial',20,'bold'), bd=2, fg="black", textvariable= PlayerO, width=6, justify=LEFT).grid(row=1,column=1)
+scorePlayerO = Entry(RightFrame, font=('Arial',20,'bold'), bd=2, fg="black", textvariable= PlayerO, width=6, justify=LEFT,state=DISABLED).grid(row=1,column=1)
 
 btnNewGame = Button(RightFrame, text="New Game",font=('Times 18 bold'), height=1, width=8, bg='gainsboro',bd=1, command=NewGame)
 btnNewGame.grid(row=2,columnspan=2,pady=22)
@@ -487,7 +492,8 @@ btnReset.grid(row=3,columnspan=2)
 btnExit = Button(RightFrame, text="Exit", font=('Times 18 bold'), height=1,width=8, bg='gainsboro', bd=1, command=exit)
 btnExit.grid(row=4,columnspan=2,pady=22)
 
-
+statusTxt = Label(RightFrame, font=('Arial',20,'bold'), text="Player\nVS\nPlayer",bg='DarkGrey', fg='Cornsilk',justify=CENTER)
+statusTxt.grid(row=5,columnspan=2)
 
 button1 = Button(MainFrame, text=" ", font=('Times 26 bold'), height = 2, width=6, bg='gainsboro', command=lambda:place_mark(button1))
 button1.grid(row=1,column=0, sticky = S+N+E+W)
