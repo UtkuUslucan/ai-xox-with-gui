@@ -505,7 +505,7 @@ statusFrame = Frame(root,bg= 'DimGrey', pady = 2, padx = 2, relief= FLAT)
 statusFrame.place(height=120, width=200, x=500,y=80)
 
 BottomFrame = Frame(root, bg = 'DarkGrey', pady = 2, width=200, height= 500, relief= FLAT)
-BottomFrame.place(height=200, width=500,y=440)
+BottomFrame.place(height=200, width=500,y=420)
 
 bottomText = Label(BottomFrame, font=('Arial',20,'bold'), text="İbrahim Utku USLUCAN",bg='DarkGrey', fg='black',justify=CENTER)
 bottomText.pack()
