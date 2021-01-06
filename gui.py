@@ -276,7 +276,7 @@ def check_win():
         n = int(PlayerX.get())
         score = (n + 1)
         PlayerX.set(score)
-        tkinter.messagebox.showinfo("Winner X", "Winner X\nYou have just won a game")
+        tkinter.messagebox.showinfo("Winner X", "Winner X")
         reset_game()
     if(button4["text"]== "X" and button5["text"]== "X" and button6["text"]== "X"):
         button4.configure(background ="powder blue")
@@ -285,7 +285,7 @@ def check_win():
         n = int(PlayerX.get())
         score = (n + 1)
         PlayerX.set(score)
-        tkinter.messagebox.showinfo("Winner X", "Winner X\nYou have just won a game")
+        tkinter.messagebox.showinfo("Winner X", "Winner X")
         reset_game()
     if(button7["text"]== "X" and button8["text"]== "X" and button9["text"]== "X"):
         button7.configure(background ="powder blue")
@@ -294,7 +294,7 @@ def check_win():
         n = int(PlayerX.get())
         score = (n + 1)
         PlayerX.set(score)
-        tkinter.messagebox.showinfo("Winner X", "Winner X\nYou have just won a game")
+        tkinter.messagebox.showinfo("Winner X", "Winner X")
         reset_game()
     if(button1["text"]== "X" and button5["text"]== "X" and button9["text"]== "X"):
         button1.configure(background ="powder blue")
@@ -303,7 +303,7 @@ def check_win():
         n = int(PlayerX.get())
         score = (n + 1)
         PlayerX.set(score)
-        tkinter.messagebox.showinfo("Winner X", "Winner X\nYou have just won a game")
+        tkinter.messagebox.showinfo("Winner X", "Winner X")
         reset_game()
     if(button3["text"]== "X" and button5["text"]== "X" and button7["text"]== "X"):
         button3.configure(background ="powder blue")
@@ -312,7 +312,7 @@ def check_win():
         n = int(PlayerX.get())
         score = (n + 1)
         PlayerX.set(score)
-        tkinter.messagebox.showinfo("Winner X", "Winner X\nYou have just won a game")
+        tkinter.messagebox.showinfo("Winner X", "Winner X")
         reset_game()
     if(button1["text"]== "X" and button4["text"]== "X" and button7["text"]== "X"):
         button1.configure(background ="powder blue")
@@ -321,7 +321,7 @@ def check_win():
         n = int(PlayerX.get())
         score = (n + 1)
         PlayerX.set(score)
-        tkinter.messagebox.showinfo("Winner X", "Winner X\nYou have just won a game")
+        tkinter.messagebox.showinfo("Winner X", "Winner X")
         reset_game()
     if(button2["text"]== "X" and button5["text"]== "X" and button8["text"]== "X"):
         button2.configure(background ="powder blue")
@@ -330,7 +330,7 @@ def check_win():
         n = int(PlayerX.get())
         score = (n + 1)
         PlayerX.set(score)
-        tkinter.messagebox.showinfo("Winner X", "Winner X\nYou have just won a game")
+        tkinter.messagebox.showinfo("Winner X", "Winner X")
         reset_game()
     if(button3["text"]== "X" and button6["text"]== "X" and button9["text"]== "X"):
         button3.configure(background ="powder blue")
@@ -339,7 +339,7 @@ def check_win():
         n = int(PlayerX.get())
         score = (n + 1)
         PlayerX.set(score)
-        tkinter.messagebox.showinfo("Winner X", "Winner X\nYou have just won a game")
+        tkinter.messagebox.showinfo("Winner X", "Winner X")
         reset_game()
     if(button1["text"]== "O" and button2["text"]== "O" and button3["text"]== "O"):
         button1.configure(background ="powder blue")
@@ -348,7 +348,7 @@ def check_win():
         n = int(PlayerO.get())
         score = (n + 1)
         PlayerO.set(score)
-        tkinter.messagebox.showinfo("Winner O", "Winner O\nYou have just won a game")
+        tkinter.messagebox.showinfo("Winner O", "Winner O")
         reset_game()
     if(button4["text"]== "O" and button5["text"]== "O" and button6["text"]== "O"):
         button4.configure(background ="powder blue")
@@ -357,7 +357,7 @@ def check_win():
         n = int(PlayerO.get())
         score = (n + 1)
         PlayerO.set(score)
-        tkinter.messagebox.showinfo("Winner O", "Winner O\nYou have just won a game")
+        tkinter.messagebox.showinfo("Winner O", "Winner O")
         reset_game()
     if(button7["text"]== "O" and button8["text"]== "O" and button9["text"]== "O"):
         button7.configure(background ="powder blue")
@@ -366,7 +366,7 @@ def check_win():
         n = int(PlayerO.get())
         score = (n + 1)
         PlayerO.set(score)
-        tkinter.messagebox.showinfo("Winner O", "Winner O\nYou have just won a game")
+        tkinter.messagebox.showinfo("Winner O", "Winner O")
         reset_game()
     if(button1["text"]== "O" and button5["text"]== "O" and button9["text"]== "O"):
         button1.configure(background ="powder blue")
@@ -375,7 +375,7 @@ def check_win():
         n = int(PlayerO.get())
         score = (n + 1)
         PlayerO.set(score)
-        tkinter.messagebox.showinfo("Winner O", "Winner O\nYou have just won a game")
+        tkinter.messagebox.showinfo("Winner O", "Winner O")
         reset_game()
     if(button3["text"]== "O" and button5["text"]== "O" and button7["text"]== "O"):
         button3.configure(background ="powder blue")
@@ -384,7 +384,7 @@ def check_win():
         n = int(PlayerO.get())
         score = (n + 1)
         PlayerO.set(score)
-        tkinter.messagebox.showinfo("Winner O", "Winner O\nYou have just won a game")
+        tkinter.messagebox.showinfo("Winner O", "Winner O")
         reset_game()
     if(button1["text"]== "O" and button4["text"]== "O" and button7["text"]== "O"):
         button1.configure(background ="powder blue")
@@ -393,7 +393,7 @@ def check_win():
         n = int(PlayerO.get())
         score = (n + 1)
         PlayerO.set(score)
-        tkinter.messagebox.showinfo("Winner O", "Winner O\nYou have just won a game")
+        tkinter.messagebox.showinfo("Winner O", "Winner O")
         reset_game()
     if(button2["text"]== "O" and button5["text"]== "O" and button8["text"]== "O"):
         button2.configure(background ="powder blue")
@@ -402,7 +402,7 @@ def check_win():
         n = int(PlayerO.get())
         score = (n + 1)
         PlayerO.set(score)
-        tkinter.messagebox.showinfo("Winner O", "Winner O\nYou have just won a game")
+        tkinter.messagebox.showinfo("Winner O", "Winner O")
         reset_game()
     if(button3["text"]== "O" and button6["text"]== "O" and button9["text"]== "O"):
         button3.configure(background ="powder blue")
@@ -411,7 +411,7 @@ def check_win():
         n = int(PlayerO.get())
         score = (n + 1)
         PlayerO.set(score)
-        tkinter.messagebox.showinfo("Winner O", "Winner O\nYou have just won a game")
+        tkinter.messagebox.showinfo("Winner O", "Winner O")
         reset_game()
     else:
         tie_checker()
