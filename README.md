@@ -11,6 +11,6 @@ I'm trying to fix.
 Game Source Code:
 Youtube - Greg Poy
 
-Gu Source Code:
+Gui Source Code:
 İbrahim Utku USLUCAN
 ##
