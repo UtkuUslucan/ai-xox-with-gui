@@ -8,6 +8,8 @@ root.title("Artificial Intelligence Tic-Tac-Toe")
 root.geometry("700x500+650+250")
 root.resizable(False,False)
 root.configure(background='DimGrey')
+p1 = PhotoImage(file = 'C:/Users/UTKU/Desktop/uni proje/icon.png')
+root.iconphoto(False,p1)
 
 player_x_turn = True
 game_over = False
@@ -191,6 +193,7 @@ def simple_AI():
     lblPlayerO['width'] = "9"
     lblPlayerO['height'] = "1"
     statusTxt['padx'] = "34"
+    NewGame()
 
 
 def medium_AI():
@@ -206,6 +209,7 @@ def medium_AI():
     lblPlayerO['width'] = "9"
     lblPlayerO['height'] = "1"
     statusTxt['padx'] = "28"
+    NewGame()
 
 def hard_AI():
     global AI_mode, AI_level
@@ -220,6 +224,7 @@ def hard_AI():
     lblPlayerO['width'] = "9"
     lblPlayerO['height'] = "1"
     statusTxt['padx'] = "48"
+    NewGame()
 
 def AI_off():
     global AI_mode
@@ -231,6 +236,7 @@ def AI_off():
     lblPlayerO['font'] = ('Arial',20,'bold')
     lblPlayerO['width'] = "8"
     statusTxt['padx'] = "56"
+    NewGame()
 
 def place_mark(button):
     global player_x_turn, AI_mode, game_over
@@ -466,7 +472,7 @@ def exit():
 def htp():
     tkinter.messagebox.showinfo("How to play?","RULES FOR TIC-TAC-TOE\n\n1- The game is played on a grid that's 3 squares by 3 squares\n2- You are X, your friend(or the computer in this case) is O. Players take turns putting their marks in empty squares.\n3- The first player to get 3 of her marks in a row (up, down, across or diagonally) is the winner.\n4- When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.\n\nHOW CAN I WIN AT TIC-TAC-TOE?\n\nTo beat the computer(or at least tie), you need to make use of a little bit of strategy. Strategy means figuring out what you need to do to win.\nPart of your strategy is trying to figure out how to get three X's in a row. The other parts is trying to figure out how to stop the computer from getting three O's in a row.\nAfter you put an X in a square, you start looking ahead. Where's the best place for your next X? You look at the empty squares and decide which ones are good choices--which ones might let you make three X's in a row.\nYou also hova to watch where the computer puts its O. That could change what you do next. If the computer gets two Os in a row, you have to put your next X in the last empty square in that row, or the computer will win. You are forced to play in a particular square or lose the game.\nIf you always pay attention and look ahead, you'll never lose a game of Tic-Tac-Toe. You may not win, but at least you'll tie.")
 def about():
-    tkinter.messagebox.showinfo("About","Game Source Code:\nYoutube: Greg Poy\nGui Source Code:\nİbrahim Utku Uslucan")
+    tkinter.messagebox.showinfo("About","Game Source Code:\nYoutube: Greg Poy\nİbrahim Utku Uslucan\nGui Source Code:\nİbrahim Utku Uslucan")
 def work():
     tkinter.messagebox.showinfo("How it work?","This Simple AI workings is random module")
 
@@ -522,11 +528,11 @@ lblPlayerO.grid(row=1,column=0)
 scorePlayerO = Entry(RightFrame, font=('Arial',20,'bold'), bd=1, fg="black", textvariable= PlayerO, width=6, justify=LEFT,state=DISABLED).grid(row=1,column=1)
 
 btnNewGame = Button(buttonFrame, text="New Game",font=('Times 18 bold'), height=1, width=8, bg='gainsboro',bd=1, command=NewGame)
-btnNewGame.grid(row=1,columnspan=2,pady=42,padx=45)
+btnNewGame.grid(row=1,columnspan=2,pady=35,padx=45)
 btnReset = Button(buttonFrame, text="Reset", font=('Times 18 bold'), height=1, width=8, bg='gainsboro',bd=1, command=reset_game)
 btnReset.grid(row=2,columnspan=2)
 btnExit = Button(buttonFrame, text="Exit", font=('Times 18 bold'), height=1,width=8, bg='gainsboro', bd=1, command=exit)
-btnExit.grid(row=3,columnspan=2,pady=42)
+btnExit.grid(row=3,columnspan=2,pady=35)
 
 statusTxt = Label(statusFrame, font=('Arial',20,'bold'), text="Player\nVS\nPlayer",bg="DimGrey", fg='Cornsilk',justify=CENTER,padx=56,pady=1)
 statusTxt.grid(row=0,column=0)
