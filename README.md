@@ -14,13 +14,13 @@ The .exe file added.
 
 
 ##
-<h3>Game Source Code:</h3>
+<h3>Game Source Code</h3>
 
 Youtube - Greg Poy
 
 İbrahim Utku USLUCAN
 
-<h3>Gui Source Code:</h3>
+<h3>Gui Source Code</h3>
 
 İbrahim Utku USLUCAN
 ##
