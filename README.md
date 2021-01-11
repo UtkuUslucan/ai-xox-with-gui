@@ -1,10 +1,15 @@
 # ai-xox
 
+<h3>Upcoming Updates</h3>
+
+~The .exe file will be added soon.~
+
 How it works menu will be updated.
 
 When playing Hard AI, if the AI wins, it automatically puts X and O on the board when the board is reset. I'm trying to fix.
 
-~The .exe file will be added soon.~
+Arrangements will be made to facilitate the readability of the codes.
+
 ##
 UPDATE V1.0
 
