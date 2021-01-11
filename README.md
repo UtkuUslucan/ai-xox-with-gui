@@ -10,6 +10,8 @@ When playing Hard AI, if the AI wins, it automatically puts X and O on the board
 
 Arrangements will be made to facilitate the readability of the codes.
 
+Main menu will be added
+
 ##
 UPDATE V1.0
 
