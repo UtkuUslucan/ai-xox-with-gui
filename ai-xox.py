@@ -91,7 +91,8 @@ def block_x():
     elif (button7["text"] == " ") and (button3["text"] == "X") and (button5["text"] == "X"):
         place_mark(button7)
     else:
-        place_in_empty_space(random.randint(1, number_empty()))
+        if player_x_turn == False:
+            place_in_empty_space(random.randint(1, number_empty()))
         
 def place_O_to_win():
     if (button1["text"] == " ") and (button2["text"] == "O") and (button3["text"] == "O"):
@@ -152,7 +153,7 @@ def place_O_to_win():
     
 
 def AI():
-    global AI_level, game_over
+    global AI_level, game_over, player_x_turn
     if number_empty() == 8:
         if button5["text"] == " ":
             place_mark(button5)
@@ -177,7 +178,6 @@ def place_in_empty_space(number):
         if myButton["text"] == " ":
             empty_space +=1
             if empty_space == number:
-                print(empty_space)
                 place_mark(myButton)
 
 def simple_AI():
